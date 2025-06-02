@@ -1,0 +1,122 @@
+/* Configuración general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: #00b894;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-shadow: 2px 2px 5px #2d3436;
+}
+
+/* Sección presentación */
+.presentacion {
+  padding: 20px;
+  text-align: center;
+}
+
+.presentacion img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.presentacion h2 {
+  color: #0984e3;
+}
+
+.btn-accion {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #0984e3, #00cec9);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn-accion:hover {
+  background: linear-gradient(45deg, #6c5ce7, #00b894);
+  transform: scale(1.1);
+}
+
+/* Galería */
+.galeria {
+  padding: 20px;
+  text-align: center;
+}
+
+.galeria h2 {
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imagenes img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Footer con redes sociales */
+footer {
+  background: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.redes {
+  margin: 10px 0;
+}
+
+.redes a {
+  font-size: 28px;
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+  color: #00cec9;
+}
+
+/* Responsivo desde 768px */
+@media (min-width: 768px) {
+  .presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .presentacion img {
+    margin-bottom: 0;
+  }
+}
